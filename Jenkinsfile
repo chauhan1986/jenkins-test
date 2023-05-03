@@ -3,7 +3,7 @@ pipeline{
 		stages{
 			stage("git clone"){
 				environment{
-				 branchBname = demo		
+				 branchBname = "demo"		
 				}
 				steps{
 					git url: 'https://github.com/vaadin/addressbook.git',branch '${BRANCH_NAME}' 	
