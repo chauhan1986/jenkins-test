@@ -2,11 +2,9 @@ pipeline{
 	agent any
 		stages{
 			stage("git clone"){
-				environment{
-				 branchBname = "demo"		
-				}
+				
 				steps{
-					git url: 'https://github.com/vaadin/addressbook.git',branch '${BRANCH_NAME}' 	
+					git url: 'https://github.com/vaadin/addressbook.git' 	
 				}
 			}
 			stage("Maven Build"){
