@@ -15,7 +15,7 @@ pipeline{
 					sh "${mavenCMD} clean package"
 				}
 			}
-			stage("Build docker iamge"){
+			stage("Build docker image"){
 				steps{
 					script{
 						dockerImage= sh 'docker build -t demo:$BUILD_NUMBER .	'
