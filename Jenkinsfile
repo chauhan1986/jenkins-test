@@ -3,7 +3,7 @@ pipeline{
 		stages{
 			stage("git clone"){
 				steps{
-				 git url: 'https://github.com/vaadin/addressbook.git'	
+				 git url: 'https://github.com/chauhan1986/jenkins-test.git'	
 				}
 			}
 			stage("Maven Build"){
